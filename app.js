@@ -25,7 +25,7 @@ const mongoose =require('mongoose');
 // })
 
 async function connectToDatabase() {
-    const URI = "mongodb+srv://MernEcommerce:mern1111@cluster0.rbbqn.mongodb.net/MERN?retryWrites=true&w=majority";
+    const URI = "mongodb+srv://johan111:johan111@cluster0.rbbqn.mongodb.net/ecommerce?retryWrites=true&w=majority";
     try {
         await mongoose.connect(URI);
         console.log("Connection Success");

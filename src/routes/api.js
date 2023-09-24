@@ -31,8 +31,8 @@ router.get('/CreateCartList', ProductController.CreateCartList);
 router.get('/RemoveCartList', ProductController.RemoveCartList);
 
 // User
-router.get('/UserLogin', UserController.UserLogin)
-router.get('/VerifyLogin', UserController.VerifyLogin);
+router.get('/UserLogin/:email', UserController.UserLogin)
+router.get('/VerifyLogin/:email/:otp', UserController.VerifyLogin);
 router.get('/UserLogout', UserController.UserLogout);
 
 
